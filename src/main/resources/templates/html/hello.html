@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>智能小车登录界面</title>
+    <script src="js/jquery/jquery-3.3.1.js"></script>
+    <link href="plug/bootstrap4/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font/font-awesome.min.css" rel="stylesheet">
+    <script src="plug/bootstrap4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form row">
+            <div class="form-horizontal col-md-offset-3" id="login_form">
+                <h3 class="form-title">登录</h3>
+                <div class="col-md-9">
+                    <div class="form-group">
+                        <i class="fa fa-user fa-lg"></i>
+                        <input class="form-control required" type="text" placeholder="Username" id="username" name="username" autofocus="autofocus" maxlength="20"/>
+                    </div>
+                    <div class="form-group">
+                            <i class="fa fa-lock fa-lg"></i>
+                            <input class="form-control required" type="password" placeholder="Password" id="password" name="password" maxlength="8"/>
+                    </div>
+                    <div class="form-group">
+                        <label class="checkbox">
+                            <input type="checkbox" name="remember" value="1"/>记住我
+                        </label>
+                    </div>
+                    <div class="form-group col-md-offset-7 col-md-5">
+                        <button type="submit" class="btn btn-success" name="submit">登录</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
