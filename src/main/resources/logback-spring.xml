@@ -6,7 +6,7 @@
     <conversionRule conversionWord="clr" converterClass="org.springframework.boot.logging.logback.ColorConverter" />
     <conversionRule conversionWord="wex" converterClass="org.springframework.boot.logging.logback.WhitespaceThrowableProxyConverter" />
     <!-- 彩色日志格式 -->
-    <property name="CONSOLE_LOG_PATTERN" value="%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(%5p) %clr(${PID:- }) [%t]{magenta} %clr(---){faint} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n%wex"/>
+    <property name="CONSOLE_LOG_PATTERN" value="%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(%5p) %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n%wex"/>
     <property name="FILE_LOG_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss.SSS} %5p ${PID:- } --- [%t] %-40.40logger{39} : %m%n%wex"/>
      
     <!--多环境的日志输出-->
@@ -19,7 +19,7 @@
         <property name="LOG_HOME" value="/data/dubbo/platform-action/log/" />
     </springProfile>
     <springProfile name="dev">
-        <property name="LOG_HOME" value="D:/logs" />
+        <property name="LOG_HOME" value="D:/logs/wificar" />
     </springProfile>
     <springProfile name="pre">
         <property name="LOG_HOME" value="/data/dubbo/platform-action/log/" />
